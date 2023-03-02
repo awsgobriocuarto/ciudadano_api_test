@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Log via personal web token (Sanctum)
+Route::post('login', [App\Http\Controllers\Api\LogController::class, 'login']);
+Route::post('logout', [App\Http\Controllers\Api\LogController::class, 'logout'])->middleware('auth:sanctum');
