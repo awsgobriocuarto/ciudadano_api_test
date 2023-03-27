@@ -1,0 +1,70 @@
+{
+    "20219986751": {
+        "propios": [
+            {
+                "bien_id": "12345",
+                "dominio": "CPM923",
+                "descripcion": "YAMAHA T105 - 2006",
+                "total_adeudado": "00.00",
+                "estado": "Al día"
+            },
+            {
+                "bien_id": "54321",
+                "dominio": "RPA755",
+                "descripcion": "RENAULT 12 TL - 1993",
+                "total_adeudado": "102.50",
+                "estado": "Presenta Deuda"
+            }
+        ],
+        "terceros": [
+            {
+                "bien_id": "98765",
+                "dominio": "FDZ994",
+                "descripcion": "I/04422587 - PALIO FIRE 1242 MPI 16V SEDAN 3 PUERTAS - FIAT - 2005",
+                "total_adeudado": "107.50",
+                "estado": "Presenta Deuda"
+            },
+            {
+                "bien_id": "56789",
+                "dominio": "SJA791",
+                "descripcion": "La Citronave",
+                "total_adeudado": "0.00",
+                "estado": "Al día"
+            }
+        ]
+    },
+    "23279336739": {
+        "propios": [
+            {
+                "bien_id": "12345",
+                "dominio": "CPM923",
+                "descripcion": "YAMAHA T105 - 2006",
+                "total_adeudado": "00.00",
+                "estado": "Al día"
+            },
+            {
+                "bien_id": "54321",
+                "dominio": "RPA755",
+                "descripcion": "RENAULT 12 TL - 1993",
+                "total_adeudado": "102.50",
+                "estado": "Presenta Deuda"
+            }
+        ],
+        "terceros": [
+            {
+                "bien_id": "98765",
+                "dominio": "FDZ994",
+                "descripcion": "I/04422587 - PALIO FIRE 1242 MPI 16V SEDAN 3 PUERTAS - FIAT - 2005",
+                "total_adeudado": "107.50",
+                "estado": "Presenta Deuda"
+            },
+            {
+                "bien_id": "56789",
+                "dominio": "SJA791",
+                "descripcion": "La Citronave",
+                "total_adeudado": "0.00",
+                "estado": "Al día"
+            }
+        ]
+    }
+}

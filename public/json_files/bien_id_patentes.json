@@ -1,0 +1,34 @@
+{
+    "140432": {
+        "bien_id": "140432",
+        "dominio": "IHK306",
+        "descripcion": "DNRPA: I/04704596 - ECOSPORT 1.6 L 4X2 XLS RURAL 5 PUERTAS - FORD - 2009",
+        "titular_cuit": "23279336739",
+        "total_adeudado": "100.00",
+        "estado": "Presenta Deuda"
+    },
+    "301485": {
+        "bien_id": "301485",
+        "dominio": "IUA214",
+        "descripcion": "DNRPA: N/03337VV - KANGOO CONFORT 1.6 CD SVT 1PL (600KG) FURGON - RENAULT - 2010",
+        "titular_cuit": "23066546659",
+        "total_adeudado": "00.00",
+        "estado": "Al día"
+    },
+    "31786": {
+        "bien_id": "31786",
+        "dominio": "CPM923",
+        "descripcion": "Descripción: YAMAHA T105      - 2006",
+        "titular_cuit": "20219986751",
+        "total_adeudado": "150.00",
+        "estado": "Presenta Deuda"
+    },
+    "341053": {
+        "bien_id": "341053",
+        "dominio": "FDZ994",
+        "descripcion": "DNRPA: I/04422587 - PALIO FIRE 1242 MPI 16V SEDAN 3 PUERTAS - FIAT - 2005",
+        "titular_cuit": "20219986751",
+        "total_adeudado": "1500.00",
+        "estado": "Presenta Deuda"
+    }
+}

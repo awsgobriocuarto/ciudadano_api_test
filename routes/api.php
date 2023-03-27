@@ -29,3 +29,8 @@ Route::get('Cuenta/Login', [App\Http\Controllers\Api\CidiController::class, 'log
 
 // Obtener datos de usuario cidi 
 Route::post('Usuario/Obtener_Usuario_Aplicacion', [App\Http\Controllers\Api\CidiController::class, 'getCitizenData']);
+
+// Datos de modulo patentes
+Route::get('servicios/patentes', [App\Http\Controllers\Api\ModuleController::class, 'getAllPatentes']);
+Route::get('servicios/patentes/cuit/{cuit}', [App\Http\Controllers\Api\ModuleController::class, 'getCitizenPatentes']);
+Route::get('servicios/patentes/bien_id/{bien_id}', [App\Http\Controllers\Api\ModuleController::class, 'getBienIdPatentes']);
