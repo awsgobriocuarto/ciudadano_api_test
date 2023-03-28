@@ -21,4 +21,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
 
+// Reemplaza vista interaccion del login del CIDI 
+Route::get('Cuenta/Login', [App\Http\Controllers\CidiController::class, 'loginCidiResponse']);
+
+// Reemplaza vista interaccion del con aplicacion detalles de patente 
 Route::get('/patentes/{id_bien}', [App\Http\Controllers\HomeController::class, 'patentes']);

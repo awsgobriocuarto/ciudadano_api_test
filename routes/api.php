@@ -23,10 +23,6 @@ Route::post('login', [App\Http\Controllers\Api\LogController::class, 'login']);
 Route::post('logout', [App\Http\Controllers\Api\LogController::class, 'logout'])->middleware('auth:sanctum');
 
 
-
-// Reemplaza interaccion del login del CIDI 
-Route::get('Cuenta/Login', [App\Http\Controllers\Api\CidiController::class, 'loginCidiResponse']);
-
 // Obtener datos de usuario cidi 
 Route::post('Usuario/Obtener_Usuario_Aplicacion', [App\Http\Controllers\Api\CidiController::class, 'getCitizenData']);
 
