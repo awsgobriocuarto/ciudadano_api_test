@@ -9,7 +9,7 @@ class CidiController extends Controller
     // Simula (vista) Login plataforma CIDI
     public function loginCidiResponse(Request $request) {
 
-        $cidi ="12345678910111213141516"; // simula el token devuelto por el cidi
+        $cidi ="2F2F6E6A322F7349555279656B38666F50684249417170627634343D"; // simula el token devuelto por el cidi 56 caracteres
 
         $data = (object)[
             "url" => $request->url,
