@@ -13,7 +13,7 @@ class CidiController extends Controller
     public function getCitizenData() {
 
         // Detener el proceso unos segundos para simular posible retardo de respuesta
-        sleep(rand(1,5));
+        sleep(rand(1,3));
 
         $path = getcwd()."/json_files/citizen_cidi.json";
         $response = file_get_contents($path);

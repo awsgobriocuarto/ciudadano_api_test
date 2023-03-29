@@ -10,7 +10,7 @@ class ModuleController extends Controller
     public function getAllPatentes(Request $request)
     {
         // detener el proceso unos segundos para simular posible retardo de respuesta
-        sleep(rand(1,5));
+        sleep(rand(1,3));
 
         $path = getcwd()."/json_files/patentes.json";
         $response = file_get_contents($path);
@@ -21,7 +21,7 @@ class ModuleController extends Controller
     public function getCitizenPatentes(Request $request)
     {
         // detener el proceso unos segundos para simular posible retardo de respuesta
-        sleep(rand(1,5));
+        sleep(rand(1,3));
 
         $path = getcwd()."/json_files/cuit_patentes.json";
 
@@ -41,7 +41,7 @@ class ModuleController extends Controller
     public function getBienIdPatentes(Request $request)
     {
         // detener el proceso unos segundos para simular posible retardo de respuesta
-        sleep(rand(1,5));
+        sleep(rand(1,3));
 
         $path = getcwd()."/json_files/bien_id_patentes.json";
 
