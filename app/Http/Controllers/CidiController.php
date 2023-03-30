@@ -7,16 +7,31 @@ use Illuminate\Http\Request;
 class CidiController extends Controller
 {
     // Simula (vista) Login plataforma CIDI
-    public function loginCidiResponse(Request $request) {
-
-        $cidi ="2F2F6E6A322F7349555279656B38666F50684249417170627634343D"; // simula el token devuelto por el cidi 56 caracteres
+    public function loginCidi(Request $request) {
 
         $data = (object)[
             "url" => $request->url,
-            "cidi" =>$cidi,
         ];
 
         return view("login_cidi", compact('data'));
+
+    }
+
+    public function setCidiResponse(Request $request)
+    {
+        $validate_array =  [
+            'token' => 'required',
+            'url' => 'required',
+          
+        ];
+
+        $validate_messages = [
+            'token.required' => 'El campo Token es obligatorio',
+        ];
+        
+        $validatedData = $request->validate($validate_array, $validate_messages);
+
+        return redirect()->away("$request->url?cidi=$request->token");
 
     }
 }

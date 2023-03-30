@@ -22,7 +22,10 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
 
 // Reemplaza vista interaccion del login del CIDI 
-Route::get('Cuenta/Login', [App\Http\Controllers\CidiController::class, 'loginCidiResponse']);
+Route::get('Cuenta/Login', [App\Http\Controllers\CidiController::class, 'loginCidi'])->name('cidi.login');
+
+// Reemplaza vista interaccion del login del CIDI 
+Route::post('Cuenta/Login/respose', [App\Http\Controllers\CidiController::class, 'setCidiResponse'])->name('cidi.response');
 
 // Reemplaza vista interaccion del con aplicacion detalles de patente 
 Route::get('/patentes/{id_bien}', [App\Http\Controllers\HomeController::class, 'patentes']);
